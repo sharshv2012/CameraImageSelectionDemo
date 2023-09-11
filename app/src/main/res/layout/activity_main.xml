@@ -22,20 +22,25 @@
         android:id="@+id/btn_camera"
         android:text="CAMERA"
         android:layout_margin="60dp"
+        android:focusableInTouchMode="false"
+        android:focusable="false"
         app:layout_constraintTop_toBottomOf="@+id/tv_title"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         />
+
     <androidx.appcompat.widget.AppCompatImageView
+        android:id="@+id/iv_image"
         android:layout_width="150dp"
         android:layout_height="150dp"
-        android:id="@+id/iv_image"
-        android:scaleType="centerCrop"
         android:layout_marginTop="60dp"
-        app:layout_constraintStart_toStartOf="parent"
+        android:scaleType="centerCrop"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/btn_camera"
-        />
+        app:layout_constraintVertical_bias="0.194" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
